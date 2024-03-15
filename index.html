@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="myControl">
+        <div ng-show="currentScreen == 'home'" ng-include="'home.html'"></div>
+        <div ng-show="currentScreen == 'content'" ng-include="'content.html'"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
